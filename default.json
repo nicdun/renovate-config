@@ -3,8 +3,8 @@
   "configMigration": true,
   "extends": [
     "config:best-practices",
-    ":dependencyDashboard",
     ":prHourlyLimitNone",
+    ":pinDependencies",
     ":separateMultipleMajorReleases",
     ":automergeMinor",
     ":automergePr",
