@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "configMigration": true,
+  "extends": [
+    "config:best-practices",
+    ":dependencyDashboard",
+    ":prHourlyLimitNone",
+    ":separateMultipleMajorReleases",
+    ":automergeMinor",
+    ":automergePr",
+    ":combinePatchMinorReleases",
+    ":rebaseStalePrs"
+  ]
+}
