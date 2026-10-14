@@ -6,12 +6,12 @@
     ":dependencyDashboard",
     ":prHourlyLimitNone",
     ":pinDependencies",
-    ":separateMultipleMajorReleases",
     ":automergeMinor",
     ":automergePr",
     ":combinePatchMinorReleases",
     ":rebaseStalePrs"
   ],
+  "labels": ["{{updateType}}"],
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
@@ -21,7 +21,6 @@
     {
       "matchUpdateTypes": ["major"],
       "groupName": "all major dependencies",
-      "separateMultipleMajor": false,
       "automerge": false
     }
   ]
