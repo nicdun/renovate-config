@@ -11,5 +11,18 @@
     ":automergePr",
     ":combinePatchMinorReleases",
     ":rebaseStalePrs"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true,
+      "platformAutomerge": false
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "groupName": "all major dependencies",
+      "separateMultipleMajor": false,
+      "automerge": false
+    }
   ]
 }
