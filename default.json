@@ -6,7 +6,6 @@
     ":dependencyDashboard",
     ":prHourlyLimitNone",
     ":pinDependencies",
-    ":separateMultipleMajorReleases",
     ":automergeMinor",
     ":automergePr",
     ":combinePatchMinorReleases",
@@ -21,7 +20,6 @@
     {
       "matchUpdateTypes": ["major"],
       "groupName": "all major dependencies",
-      "separateMultipleMajor": false,
       "automerge": false
     }
   ]
