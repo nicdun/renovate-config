@@ -12,6 +12,7 @@
     ":combinePatchMinorReleases",
     ":rebaseStalePrs"
   ],
+  "labels": ["{{updateType}}"],
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
