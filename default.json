@@ -23,6 +23,10 @@
       "matchUpdateTypes": ["major"],
       "groupName": "all major dependencies",
       "automerge": false
+    },
+    {
+      "matchPackageNames": ["wrangler", "/^@cloudflare\\//"],
+      "groupName": "cloudflare"
     }
   ]
 }
